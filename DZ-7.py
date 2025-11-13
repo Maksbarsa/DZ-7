@@ -70,3 +70,4 @@ with open('DZ7/4.txt', 'w', encoding='utf-8') as text4:
         with open(i, 'r', encoding='utf-8') as infile:
             text4.write(infile.read())
             text4.write('\n')
+            print("Слияние завершено!")
