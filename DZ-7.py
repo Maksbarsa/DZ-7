@@ -58,7 +58,6 @@ for i in filenames:
     with open(i, 'r', encoding='utf-8') as infile:
         a = infile.readlines()
         x = {i : int(len(a))}
-        print(x)
         filenames_sort.append(x)
 sorted_list = sorted(filenames_sort, key=lambda x: list(x.values())[0])
 b = sorted_list
@@ -70,4 +69,4 @@ with open('DZ7/4.txt', 'w', encoding='utf-8') as text4:
         with open(i, 'r', encoding='utf-8') as infile:
             text4.write(infile.read())
             text4.write('\n')
-            print("Слияние завершено!")
+print("Слияние завершено!")
